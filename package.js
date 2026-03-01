@@ -1,20 +1,18 @@
 {
-  "name": "sunwin-sicbo-api",
+  "name": "sunwin-websocket-api",
   "version": "1.0.0",
-  "description": "API lấy lịch sử và kết quả Sicbo Sunwin tự động cập nhật",
-  "main": "sicbosungoc.js",
-  "type": "commonjs",
+  "description": "Sun.Win websocket stream + API service",
+  "main": "apisun.js",
   "scripts": {
-    "start": "node sicbosungoc.js",
-    "dev": "nodemon sicbosungoc.js"
+    "start": "node apisun.js"
   },
-  "author": "SangVu",
-  "license": "ISC",
+  "engines": {
+    "node": ">=18.x"
+  },
   "dependencies": {
-    "axios": "^1.6.0",
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.2"
+    "express": "^4.19.2",
+    "ws": "^8.16.0",
+    "cors": "^2.8.5",
+    "network": "^0.7.0"
   }
 }
